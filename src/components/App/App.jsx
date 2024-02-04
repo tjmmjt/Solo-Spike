@@ -12,7 +12,10 @@ function App() {
 
   return (
     <>
-      <Container sx={{display: 'flex', justifyContent: 'center'}}>
+      <Container sx={{
+        display: 'flex', 
+        justifyContent: 'center',
+      }}>
         <AddLEGO />
       </Container>
     </>
