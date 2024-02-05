@@ -6,11 +6,11 @@ import Button from '@mui/material/Button';
 import { useDispatch } from 'react-redux';
 
 function AddLEGO() {
-  const dispatch = useDispatch()
+//   const dispatch = useDispatch()
 
-  const handleSearch = () => {
-    dispatch({type: 'API_FETCH_ID'})
-  }
+//   const handleSearch = () => {
+//     dispatch({type: 'API_FETCH_ID'})
+//   }
 
   return (
     <Box
