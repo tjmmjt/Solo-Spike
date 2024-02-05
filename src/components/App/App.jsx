@@ -4,11 +4,12 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { Container } from '@mui/material';
-import AddLEGO from '../AddLEGO/AddLEGO'
+import AddCustomLEGO from '../AddCustomLEGO/AddCustomLEGO';
+
+
 
 
 function App() {
-
 
   return (
     <>
@@ -16,7 +17,7 @@ function App() {
         display: 'flex', 
         justifyContent: 'center',
       }}>
-        <AddLEGO />
+        <AddCustomLEGO />
       </Container>
     </>
   )
