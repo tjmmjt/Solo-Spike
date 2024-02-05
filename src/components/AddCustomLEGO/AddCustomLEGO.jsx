@@ -8,15 +8,19 @@ import axios from "axios";
 import { useState } from "react";
 
 function AddCustomLEGO() {
+  // local state to store image file
   const [file, setFile] = useState();
 
   const handlePost = async (event) => {
     event.preventDefault();
-
+    // use formData to store multipart form-data
     const formData = new FormData();
+    // append "image" with file
     formData.append("image", file);
     console.log(event.target.files);
-    await axios.post("/api/addlegoimage", formData, {
+    // make post with form data, headers declare content type =
+    // as multipart form data
+    await axios.post('/api/addlegoimage', formData, {
       headers: { "Content-Type": "multipart/form-data" },
     });
   };
@@ -33,12 +37,32 @@ function AddCustomLEGO() {
       }}
     >
       <form onSubmit={handlePost}>
-        <input type="file" onChange={setFile} accept="image/*" />
+        {/* set input type to file, 
+        then onchange have callback function to setFile to event.target.files at the 0 index, 
+        only accept images? */}
+        <input type="file" onChange={event => setFile(event.target.files[0])} accept="image/*" />
         <button type="submit">Submit</button>
       </form>
     </Box>
   );
 }
+
+// const submit = async event => {
+//   event.preventDefault()
+
+//   const formData = new FormData();
+//   formData.append("image", file)
+//   formData.append("caption", caption)
+//   await axios.post("/api/posts", formData, { headers: {'Content-Type': 'multipart/form-data'}})
+// }
+
+// return (
+//    <form onSubmit={submit}>
+//      <input onChange={e => setFile(e.target.files[0])} type="file" accept="image/*"></input>
+//      <input value={caption} onChange={e => setCaption(e.target.value)} type="text" placeholder='Caption'></input>
+//      <button type="submit">Submit</button>
+//    </form>
+// )
 
 // {/* <Box
 //       component="form"
