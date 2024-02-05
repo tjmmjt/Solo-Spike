@@ -1,8 +1,17 @@
-# React + Vite
+# Prime Solo Spike
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="./public/images/BRICKS no_background.png" alt="drawing" style="height:200px;"/>
 
-Currently, two official plugins are available:
+# BRICKS - LEGO Project Showcase App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+BRICKS is a user-friendly web application designed to help LEGO enthusiasts, especially kids, showcase their LEGO projects. This README will provide you with all the necessary information to get started with BRICKS.
+
+## Spike - explore Material UI and AWS S3
+1. **Material UI**:
+- Objective: Use Material UI to provide users with a simple and friendly UI/UX.
+
+2. **AWS**: 
+- Feature: Users can their own custom LEGO sets to their 'Custom Gallery' by uploading an image and giving it a name. They may also add a description, date, and category.
+
+
+
