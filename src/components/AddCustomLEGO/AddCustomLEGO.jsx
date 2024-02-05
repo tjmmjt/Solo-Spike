@@ -23,7 +23,7 @@ function AddCustomLEGO() {
 
   return (
     <Box
-      component="form"
+      component="section"
       sx={{
         boxShadow: 3,
         p: 5,
