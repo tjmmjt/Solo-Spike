@@ -4,7 +4,7 @@
 
 # BRICKS - LEGO Project Showcase App
 
-BRICKS is a user-friendly web application designed to help LEGO enthusiasts, especially kids, showcase their LEGO projects. This README will provide you with all the necessary information to get started with BRICKS.
+BRICKS is a user-friendly web application designed to help LEGO enthusiasts, especially kids, showcase their LEGO projects.
 
 ## Spike - explore Material UI and AWS S3
 1. **Material UI**:
